@@ -9,12 +9,13 @@ class PostsController < ApplicationController
         post = Post.find_by(id:params[:id])
         render json: post 
      end 
+  
+     def create
+        byebug
+        post = Post.create(post_params)
+        render json: post
     
-    #  def create
-    #     post = Post.find_or_create_by(google_id: post_params[:google_id])
-    #     post.update(post_params)
-    
-    # end
+    end
     
     def update
         post = Post.find_by(id: params[:id])
