@@ -4,8 +4,9 @@
     resources :users, only: [:show]
     post '/signin', to: 'users#signin'  # '/signin' is endpoint,'users#signin' means users controller, sigin method. when make post request to the signin endpoint, i will take you to user controller, signin method.
     get '/validate', to: 'users#validate'
-    get '/inventory', to: 'users#inventory'
-    get '/post', to: 'posts#create'
+    post "/auth/create", to: "auth#create"
+    get "/auth/show", to: "auth#show"
+    post '/signup', to: 'users#create'  
     resources :posts
     resources :restaurants
     resources :users

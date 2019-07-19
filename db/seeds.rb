@@ -10,18 +10,36 @@ User.destroy_all
 user1=User.create(username: "elle", password: "123456")
 user2=User.create(username: "miao", password: "123456")
 
-Item.create(name:"postion", description: "lalala", user_id: user1.id)
-Item.create(name:"hey", description: "lol", user_id: user2.id)
-Item.create(name:"hey", description: "lol", user_id: user2.id)
-Item.create(name:"hey", description: "lol", user_id: user2.id)
-Item.create(name:"hey", description: "lol", user_id: user2.id)
-Item.create(name:"hey", description: "lol", user_id: user2.id)
-Item.create(name:"hey", description: "lol", user_id: user2.id)
+
 
 #RESTAURANT
 
-restaurant1=Restaurant.create(name: "wasabi", location:"131 Finsbury Pavement")
-restaurant2=Restaurant.create(name: "Pod", location:"131 Finsbury Pavement")
+restaurant1=Restaurant.create(name: "wasabi", location:"131 Finsbury Pavement",image:"https://media-public.canva.com/MADGyRHzGfY/4/thumbnail_large.jpg",description:"40%off")
+
+restaurant2=Restaurant.create(name: "Pod", location:"131 Finsbury Pavement",image:"https://media-public.canva.com/MADGyPJznP8/4/thumbnail_large.jpg",description:"25%off")
+
+restaurant3=Restaurant.create(name: "xxx", location:"canary wharf",image:"https://media-public.canva.com/MADGyc1d4bw/4/thumbnail_large.jpg",description:"25%off")
+
+restaurant4=Restaurant.create(name: "xxx", location:"131 Finsbury Pavement",image:"https://media-public.canva.com/MADGyQTk1l8/4/thumbnail_large.jpg",description:"25%off")
+
+restaurant5=Restaurant.create(name: "xxx", location:"131 Finsbury Pavement",image:"https://media-public.canva.com/MADGyc1d4bw/4/thumbnail_large.jpg",description:"25%off")
+
+restaurant6=Restaurant.create(name: "xxx", location:"131 Finsbury Pavement",image:"https://media-public.canva.com/MADGyG1cq7g/4/thumbnail_large.jpg",description:"25%off")
+
+restaurant7=Restaurant.create(name: "xxx", location:"131 Finsbury Pavement",image:"https://media-public.canva.com/MADGxu12qcM/4/thumbnail_large.jpg",description:"25%off")
+
+restaurant8=Restaurant.create(name: "xxx", location:"131 Finsbury Pavement",image:"https://media-public.canva.com/MADGyW8wH78/4/thumbnail_large.jpg",description:"25%off")
+
+restaurant9=Restaurant.create(name: "xxx", location:"131 Finsbury Pavement",image:"https://media-public.canva.com/MADGyc1d4bw/4/thumbnail_large.jpg",description:"25%off")
+
+restaurant10=Restaurant.create(name: "xxx", location:"131 Finsbury Pavement",image:"https://media-public.canva.com/MADGx7dgwU0/4/thumbnail_large.jpg",description:"25%off")
+
+restaurant11=Restaurant.create(name: "xxx", location:"131 Finsbury Pavement",image:"https://media-public.canva.com/MADGyPoRqB4/4/thumbnail_large.jpg",description:"25%off")
+
+
+
+
+
 
 #POST
 Post.create(user:user1, restaurant:restaurant1, description:"Wasabi 50% off")
