@@ -33,4 +33,5 @@ def update
   def restaurant_params
     params.require(:restaurant).permit(:location, :user_id)
 end 
+end 
 
