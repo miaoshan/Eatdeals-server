@@ -43,6 +43,8 @@ restaurant11=Restaurant.create(name: "Aqua shard", location:"Shard,London",image
 
 
 
+
+
 #POST
 Post.create(user:user1, restaurant:restaurant1, description:"Wasabi 50% off")
 Post.create(user:user1, restaurant:restaurant1,description:"Eat 20% off")

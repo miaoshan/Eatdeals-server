@@ -11,9 +11,14 @@ class PostsController < ApplicationController
      end 
   
      def create
-        # byebug
-        post = Post.create(post_params)
-        render json: post
+      user = current_user
+      post = Post.create(
+        user_id: user.id,
+        description: params[:description],
+        restaurant_id: params[:restaurant_id]
+      )
+      # byebug
+      render json: post
     
     end
     

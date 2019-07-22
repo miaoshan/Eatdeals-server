@@ -15,10 +15,10 @@ class ApplicationController < ActionController::API
     token = get_token
     decoded_token = decode_token(token)
     user = User.find(decoded_token["user_id"])
-    user_hash = {
-      username: user[:username],
-      id: user[:id]
-    }
+    # user_hash = {
+    #   username: user[:username],
+    #   id: user[:id]
+    # }
   end
   
   def logged_in
