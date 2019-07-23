@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::API
+
+  # before_action :get_token, except: [ "/restaurants", "/posts" ]
+  
   def issue_token(payload)
     JWT.encode(payload, ENV['RAILS_SECRET'])
   end
@@ -11,17 +14,14 @@ class ApplicationController < ActionController::API
     request.headers["Authorization"]
   end
 
-  def current_user
+  def get_current_user
     token = get_token
     decoded_token = decode_token(token)
+    # byebug
     user = User.find(decoded_token["user_id"])
-    # user_hash = {
-    #   username: user[:username],
-    #   id: user[:id]
-    # }
   end
   
   def logged_in
-    !!current_user
+    !!get_current_user
   end
 end

@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-
     def index 
         posts = Post.all
         render json: posts
@@ -11,13 +10,13 @@ class PostsController < ApplicationController
      end 
   
      def create
-      user = current_user
+      user = get_current_user
       post = Post.create(
         user_id: user.id,
         description: params[:description],
         restaurant_id: params[:restaurant_id]
       )
-      # byebug
+    
       render json: post
     
     end
@@ -34,6 +33,16 @@ class PostsController < ApplicationController
         post.destroy
         render json: {message: "post Successfully Deleted"}
       end
+
+
+      def my_posts
+        if logged_in
+          render json: User.find(get_current_user[:id]).posts
+        else 
+          render json:{error: "You need to login to see your posts"}
+        end 
+      end 
+    
     
       private
       def post_params

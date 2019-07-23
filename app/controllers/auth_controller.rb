@@ -12,7 +12,7 @@ class AuthController < ApplicationController
   
     def show
       if logged_in
-        render json: current_user
+        render json: get_current_user
       else 
         render json: {error: "Incorrect token."}
       end
