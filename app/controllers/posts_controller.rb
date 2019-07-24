@@ -14,13 +14,14 @@ class PostsController < ApplicationController
       post = Post.create(
         user_id: user.id,
         description: params[:description],
-        restaurant_id: params[:restaurant_id]
-      )
-    
+        restaurant_id: params[:restaurant_id],
+        image: params[:image])
+     
       render json: post
-    
     end
-    
+
+
+
     def update
         post = Post.find_by(id: params[:id])
         post.update(post_params)
@@ -46,6 +47,6 @@ class PostsController < ApplicationController
     
       private
       def post_params
-        params.require(:post).permit(:description, :user_id, :restaurant_id)
+        params.require(:post).permit(:description, :user_id, :restaurant_id, :image)
     end 
 end 

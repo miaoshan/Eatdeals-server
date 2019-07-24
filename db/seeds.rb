@@ -16,14 +16,14 @@ Restaurant.destroy_all
 
 restaurant1=Restaurant.create(name: "Afternoon Tea @ Holt Hotel", location:"London",image:"https://media-public.canva.com/MADGyRHzGfY/4/thumbnail_large.jpg",description:"40%off",average_cost_per_person:32,review:4.6)
 
-restaurant2=Restaurant.create(name: "Pod", location:"London",image:"https://media-public.canva.com/MADGyPJznP8/4/thumbnail_large.jpg",description:"25%off",average_cost_per_person:35,review:4.8)
+restaurant2=Restaurant.create(name: "The Oxford Kitchen", location:"London",image:"https://media-public.canva.com/MADGyBpt7SQ/4/thumbnail_large.jpg",description:"25%off",average_cost_per_person:35,review:4.8)
 
 restaurant3=Restaurant.create(name: "Cinnamon Kitchen Oxford
-", location:"Oxford",image:"https://media-public.canva.com/MADGyc1d4bw/4/thumbnail_large.jpg",description:"25%off",average_cost_per_person:21,review:4)
+", location:"Oxford",image:"https://media-public.canva.com/MADGwL0KNUI/5/thumbnail_large.jpg",description:"25%off",average_cost_per_person:21,review:4)
 
 restaurant4=Restaurant.create(name: "Palm Court Brasserie", location:"London",image:"https://media-public.canva.com/MADGyQTk1l8/4/thumbnail_large.jpg",description:"3 courses & a Kir Royale £22.50 per person",average_cost_per_person:15,review:4.2)
 
-restaurant5=Restaurant.create(name: "Boulevard Brasserie", location:"Covent Garden,London",image:"https://media-public.canva.com/MADGyc1d4bw/4/thumbnail_large.jpg",description:"3 courses & a Kir Royale £22.50 per person",average_cost_per_person:25,review:4.7)
+restaurant5=Restaurant.create(name: "Boulevard Brasserie", location:"Covent Garden,London",image:"https://media-public.canva.com/MADZ_wG5V-s/1/thumbnail_large.jpg",description:"3 courses & a Kir Royale £22.50 per person",average_cost_per_person:25,review:4.7)
 
 restaurant6=Restaurant.create(name: "Joe Allen - Covent Garden
 ", location:"London",image:"https://media-public.canva.com/MADGyG1cq7g/4/thumbnail_large.jpg",description:"3 courses & a cocktail £27.50 per person",average_cost_per_person:26,review:4.0)
