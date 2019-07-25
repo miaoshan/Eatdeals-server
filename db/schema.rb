@@ -10,24 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_24_084312) do
+ActiveRecord::Schema.define(version: 2019_07_25_140135) do
 
-  create_table "items", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_items_on_user_id"
-  end
-
-  create_table "posts", force: :cascade do |t|
-    t.text "description"
+  create_table "deals", force: :cascade do |t|
+    t.string "image"
+    t.string "description"
     t.integer "user_id"
     t.integer "restaurant_id"
-    t.string "image"
-    t.index ["restaurant_id"], name: "index_posts_on_restaurant_id"
-    t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "restaurants", force: :cascade do |t|
@@ -37,15 +26,11 @@ ActiveRecord::Schema.define(version: 2019_07_24_084312) do
     t.float "review"
     t.integer "average_cost_per_person"
     t.string "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

@@ -2,7 +2,7 @@ class RestaurantsController < ActionController::API
 
  def index 
     restaurants = Restaurant.all
-    render json: restaurants
+    render :json => restaurants.to_json(:include => { :deals => { } })
  end 
 
  def show 
@@ -29,9 +29,6 @@ def update
     render json: {message: "Restaurant Successfully Deleted"}
   end
 
-  private
-  def restaurant_params
-    params.require(:restaurant).permit(:location, :user_id)
-end 
+
 end 
 

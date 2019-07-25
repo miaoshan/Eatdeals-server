@@ -39,16 +39,14 @@ restaurant10=Restaurant.create(name: "Oblix West at The Shard", location:"Shard,
 restaurant11=Restaurant.create(name: "Aqua shard", location:"Shard,London",image:"https://media-public.canva.com/MADGyPoRqB4/4/thumbnail_large.jpg",description:" 3 courses & a Bellini £34 per person",average_cost_per_person:16,review:4.7)
 
 
+#Deals
+
+deal1=Deal.create(image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXDEsR9s_MFyfLlF-C53NC-AEIoGrg6aZZJBUmSF-m2RrDw1ejZA", description: "good deal",restaurant_id:1, user_id:4)
 
 
 
 
 
-
-#POST
-Post.create(user:user1, restaurant:restaurant1, description:"Wasabi 50% off")
-Post.create(user:user1, restaurant:restaurant1,description:"Eat 20% off")
-Post.create(user:user2, restaurant:restaurant2,description:"wow 50% off at Pret")
 
 
 

@@ -7,7 +7,7 @@
     post "/auth/create", to: "auth#create"
     get "/auth/show", to: "auth#show"
     post '/signup', to: 'users#create'  
-    resources :posts
+    resources :deals
     resources :restaurants
     resources :users
 

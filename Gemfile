@@ -45,5 +45,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jwt'
 
-# active record serializers
-gem "active_model_serializers"
+# # active record serializers
+# gem "active_model_serializers"

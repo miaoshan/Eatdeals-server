@@ -17,7 +17,7 @@ class UsersController < ApplicationController
       if user.save
         payload = {user_id: user.id}
         token = issue_token(payload)
-        reply = { jwt: token, username: user.username}
+        reply = { jwt: token, username: user.username, id:user.id}
         render json: reply
 
       else
