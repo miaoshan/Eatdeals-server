@@ -23,7 +23,8 @@ class DealsController < ApplicationController
 
 
     def update
-       deal = Deal.find_by(id: params[:id])
+      deal = Deal.find_by(id: params[:id])
+     
         deal.update(deal_params)
         render json: deal
       end  
