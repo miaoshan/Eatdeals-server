@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_25_140135) do
+ActiveRecord::Schema.define(version: 2019_07_28_211700) do
 
   create_table "deals", force: :cascade do |t|
     t.string "image"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 2019_07_25_140135) do
     t.float "review"
     t.integer "average_cost_per_person"
     t.string "description"
+    t.float "longitude"
+    t.float "latitude"
   end
 
   create_table "users", force: :cascade do |t|

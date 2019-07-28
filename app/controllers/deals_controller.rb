@@ -2,8 +2,6 @@ class DealsController < ApplicationController
     def index 
         deals = Deal.all
         render :json => deals.to_json(:include => { :restaurant => { } })
-       
-        
      end 
     
      def show 
@@ -11,8 +9,6 @@ class DealsController < ApplicationController
         render :json => deal.to_json(:include => { :restaurant => { } })
      end 
   
-  
-
     def create
       user = current_user
       deal = Deal.new(deal_params)

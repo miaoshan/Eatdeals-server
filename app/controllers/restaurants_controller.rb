@@ -7,7 +7,7 @@ class RestaurantsController < ActionController::API
 
  def show 
     restaurant = Restaurant.find_by(id:params[:id])
-    render json: restaurant 
+    render json: restaurant.to_json(:include => { :deals => { } }) 
  end 
 
 #  def create
