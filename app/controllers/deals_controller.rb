@@ -31,15 +31,6 @@ class DealsController < ApplicationController
         deal.destroy
         render json: {message: "post Successfully Deleted"}
       end
-
-
-      # def my_posts
-      #   if logged_in
-      #     render json: User.find(get_current_user[:id]).posts
-      #   else 
-      #     render json:{error: "You need to login to see your posts"}
-      #   end 
-      # end 
     
     
       private
