@@ -54,8 +54,10 @@ restaurant18=Restaurant.create(name: "LIMA - FLORAL", location:"Covent Garden, L
 
 restaurant19=Restaurant.create(name:"St Martins Lane Kitchen",location:"St Martins Lane hotel, 45 St Martin's Lane, London",image:"https://img.static-bookatable.com/55156a66-8578-48e9-9ee8-ccd6da5d19ce.jpg?id=06b01e9a-816e-450e-9267-d4b074ab6223.jpg&404=bat2%2F404-restaurant.jpg&height=466&width=700&quality=75&mode=crop&scale=both",description:"St Martins Lane Kitchen elevates familiar flavours from the East and the West and turns them into something extraordinary.", average_cost_per_person:25, review:3,latitude:51.511283, longitude:-0.126741)
 
-restaurant20=
-Restaurant.create(name:"Roadhouse",location:"35 The Piazza, London",image:"https://img.static-bookatable.com/117a7239-3325-4805-a920-a8e2f7d3e0d1.jpg?id=e304e915-5849-42e0-a28b-97a355e8031a.jpg&404=bat2%2F404-restaurant.jpg&height=466&width=700&quality=75&mode=crop&scale=both",description:"An American-style diner by day, Roadhouse transforms into a chic flair bar and nightclub, where the bar staff provide awesome entertainment.", average_cost_per_person:20, review:3.9,latitude:35,longitude:-0.122118)
+restaurant20=Restaurant.create(name:"Roadhouse",location:"35 The Piazza, London",image:"https://img.static-bookatable.com/117a7239-3325-4805-a920-a8e2f7d3e0d1.jpg?id=e304e915-5849-42e0-a28b-97a355e8031a.jpg&404=bat2%2F404-restaurant.jpg&height=466&width=700&quality=75&mode=crop&scale=both",description:"An American-style diner by day, Roadhouse transforms into a chic flair bar and nightclub, where the bar staff provide awesome entertainment.", average_cost_per_person:20, review:3.9,latitude:51.511902,longitude:-0.121459)
+
+restaurant21=Restaurant.create(name:"Leilani Restaurant & Ashanti Lounge B",location:"Battersea, London",image:"https://img.grouponcdn.com/deal/31urSTPxrUm96auK7AHGpsb1kzab/31-700x420/v1/c700x420.jpg",description:"Leilani Restaurant & Ashanti Lounge Bar serves up British classics with an African twist. The menu features an array of meat and vegetable dishes, all of which can be enjoyed in a chic dining space. The venue is located on Lavender Hill, just off Clapham Common.", average_cost_per_person:21, review:4.1,latitude:51.470531,longitude:-0.150168)
+
 
 #Deals
 
