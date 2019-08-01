@@ -35,6 +35,6 @@ class DealsController < ApplicationController
     
       private
       def deal_params
-        params.require(:deal).permit(:description, :user_id, :restaurant_id, :image)
+        params.require(:deal).permit(:description, :user_id, :restaurant_id)
     end 
 end 
